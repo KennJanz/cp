@@ -11,13 +11,13 @@ func selectionSort(arr []int) {
                 minIndex = j
             }
         }
-        // Intercambiar el elemento mínimo encontrado con el primer elemento no ordenado
+        
         arr[i], arr[minIndex] = arr[minIndex], arr[i]
     }
 }
 
 func main() {
-    // Ejemplo de uso
+    
     arr := []int{64, 25, 12, 22, 11}
     fmt.Println("Array antes de ordenar:", arr)
     selectionSort(arr)
